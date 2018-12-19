@@ -1,0 +1,323 @@
+﻿<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <title>Clube Desportivo do Arneiro</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles/layout.css" type="text/css">
+    <style>
+        #myImg {
+            cursor: pointer;
+            transition: 0.3s;
+            width: 200px;
+            height: 100px;
+            float: left;
+            border: 1px solid #D6D6D6;
+        }
+        #myImg:hover {
+            opacity: 0.7;
+        }
+        /* The Modal (background) */
+        
+        .modal {
+            display: none;
+            /* Hidden by default */
+            
+            position: fixed;
+            /* Stay in place */
+            
+            z-index: 1;
+            /* Sit on top */
+            
+            padding-top: 100px;
+            /* Location of the box */
+            
+            left: 0;
+            top: 0;
+            width: 100%;
+            /* Full width */
+            
+            height: 100%;
+            /* Full height */
+            
+            overflow: auto;
+            /* Enable scroll if needed */
+            
+            background-color: rgb(0, 0, 0);
+            /* Fallback color */
+            
+            background-color: rgba(0, 0, 0, 0.9);
+            /* Black w/ opacity */
+        }
+        #myImg2 {
+            cursor: pointer;
+            transition: 0.3s;
+            width: 200px;
+            height: 100px;
+            float: left;
+            border: 1px solid #D6D6D6;
+        }
+        #myImg2:hover {
+            opacity: 0.7;
+        }
+        /* The Modal (background) */
+        
+        .modal {
+            display: none;
+            /* Hidden by default */
+            
+            position: fixed;
+            /* Stay in place */
+            
+            z-index: 1;
+            /* Sit on top */
+            
+            padding-top: 100px;
+            /* Location of the box */
+            
+            left: 0;
+            top: 0;
+            width: 100%;
+            /* Full width */
+            
+            height: 100%;
+            /* Full height */
+            
+            overflow: auto;
+            /* Enable scroll if needed */
+            
+            background-color: rgb(0, 0, 0);
+            /* Fallback color */
+            
+            background-color: rgba(0, 0, 0, 0.9);
+            /* Black w/ opacity */
+        }
+        /* Modal Content (image) */
+        
+        .modal-content {
+            margin: auto;
+            display: block;
+            width: 80%;
+            max-width: 700px;
+        }
+        /* Caption of Modal Image */
+        
+        #caption {
+            margin: auto;
+            display: block;
+            width: 80%;
+            max-width: 700px;
+            text-align: center;
+            color: #ccc;
+            padding: 10px 0;
+            height: 150px;
+        }
+        /* Add Animation */
+        
+        .modal-content,
+        #caption {
+            -webkit-animation-name: zoom;
+            -webkit-animation-duration: 0.6s;
+            animation-name: zoom;
+            animation-duration: 0.6s;
+        }
+        @-webkit-keyframes zoom {
+            from {
+                -webkit-transform: scale(0)
+            }
+            to {
+                -webkit-transform: scale(1)
+            }
+        }
+        @keyframes zoom {
+            from {
+                transform: scale(0)
+            }
+            to {
+                transform: scale(1)
+            }
+        }
+        /* The Close Button */
+        
+        .close {
+            position: absolute;
+            top: 15px;
+            right: 35px;
+            color: #f1f1f1;
+            font-size: 40px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+        .close:hover,
+        .close:focus {
+            color: #bbb;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        /* 100% Image Width on Smaller Screens */
+        
+        @media only screen and (max-width: 700px) {
+            .modal-content {
+                width: 100%;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <header id="header" style="float:left">
+        <img id="logo" src="images/logo.png" style="float:left">
+
+        <nav>
+            <ul>
+                <li><a href="index.html">INÍCIO</a>
+                </li>
+                <li>
+                    <a href="Clube.html">CLUBE</a>
+                    <ul>
+                        <li><a href="Historial.html">Historial</a>
+                        </li>
+                        <li><a href="Org.Sociais.html">Orgãos Sociais 2016 - 2017</a>
+                        </li>
+                        <li><a href="Estatutos.html">Estatutos</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="Modalidades.html">MODALIDADES</a>
+                    <ul>
+                        <li><a href="Tiro.html">Tiro</a>
+                        </li>
+                        <li><a href="Atletismo.html">Atletismo</a>
+                        </li>
+                        <li><a href="KarateJutsu.html">Karaté Jutsu</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="Eventos.html">EVENTOS</a>
+                </li>
+                <li>
+                    <a href="Contactos.html">SUPORTE</a>
+                    <ul>
+                        <li><a href="Contactos.html">Contactos</a>
+                        </li>
+                        <li><a href="Morada.html">Morada</a>
+                        </li>
+                        <li><a href="Pedido de informações.html">Pedido de informações</a>
+                        </li>
+                        <li><a href="Proposta de Sócio.html">Proposta de Sócio</a>
+                        </li>
+                        <li><a href="Serviços de Sócio.html">Serviços de Sócio</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="Cliente.html">ÁREA DE CLIENTE</a>
+                    <ul>
+                        <li><a href="Login.html">Login</a>
+                        </li>
+                        <li><a href="Registo.html">Registo</a>
+                        </li>
+
+                    </ul>
+                </li>
+                <li>
+                    <a href="Vermais.html">VER MAIS &raquo;</a>
+                </li>
+            </ul>
+        </nav>
+        <div style="float:left; margin-right:0; ">
+            &nbsp;&nbsp;
+            <a href="Login.html"><img src="images/login.png" id="iconlogin" />
+            </a>
+            &nbsp;&nbsp;
+            <img src="images/user.png" id="iconlogin" />
+        </div>
+    </header>
+
+
+    <div id="container" class="clear">
+        <h2 id="alltitles">Eventos</h2>
+        <p>
+            Nesta secção do site poderá acompanhar todos os Eventos a realizar pela Direção do Clube Desportivo do Arneiro e também os que já tenham sido realizados.
+        </p>
+        <br>
+        <div>
+            <img id="myImg" src="images/evento1.png" alt="53º Aniversário do Clube Desportivo do Arneiro">
+            </a>
+            <div>
+                <p style="color:firebrick; font-weight:bold;">&nbsp;&nbsp;&nbsp;53º Aniversário do Clube Desportivo do Arneiro</p>
+                <p>&nbsp;&nbsp;&nbsp;Dias 8, 9, 10 e 15 de agosto.</p>
+            </div>
+        </div>
+        <div style="clear: both;">
+            <br>
+            <img id="myImg2" src="images/evento2.png" alt="52º Aniversário do Clube Desportivo do Arneiro">
+            </a>
+            <div>
+                <p style="color:firebrick; font-weight:bold;">&nbsp;&nbsp;&nbsp;52º Aniversário do Clube Desportivo do Arneiro</p>
+                <p>&nbsp;&nbsp;&nbsp;Dias 10 e 15 de agosto.</p>
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+
+        <div id="myModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="imgs">
+            <div id="caption"></div>
+        </div>
+
+    </div>
+
+    <script>
+        // Get the modal
+        var modal = document.getElementById('myModal');
+
+        // Get the image and insert it inside the modal - use its "alt" text as a caption
+        var img = document.getElementById('myImg');
+        var modalImg = document.getElementById("imgs");
+        var captionText = document.getElementById("caption");
+        img.onclick = function() {
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            captionText.innerHTML = this.alt;
+        }
+        var img = document.getElementById('myImg2');
+        var modalImg = document.getElementById("imgs");
+        var captionText = document.getElementById("caption");
+        img.onclick = function() {
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            captionText.innerHTML = this.alt;
+        }
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+    </script>
+
+    <footer id="footer" class="clear">
+        <p style="text-align: center;">Clube Desportivo do Arneiro, desde 1962</p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,197 @@
+﻿<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <title>Clube Desportivo do Arneiro</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles/layout.css" type="text/css">
+<style>
+    #header nav ul a#clube:hover{
+        color:blue;
+    }
+    #header nav ul li#subclube ul a:hover{
+        color: white;
+        background-color: blue;
+    }
+</style>
+</head>
+
+<body>
+    <header id="header" style="float:left">
+        <img id="logo" src="images/logo.png" style="float:left">
+
+        <nav>
+            <ul>
+                <li><a href="index.html">INÍCIO</a>
+                </li>
+                <li id="subclube">
+                    <a href="Clube.html" id="clube">CLUBE</a>
+                    <ul>
+                        <li><a href="Historial.html">Historial</a>
+                        </li>
+                        <li><a href="Org.Sociais.html">Orgãos Sociais 2016 - 2017</a>
+                        </li>
+                        <li><a href="Estatutos.html">Estatutos</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="Modalidades.html">MODALIDADES</a>
+                    <ul>
+                        <li><a href="Tiro.html">Tiro</a>
+                        </li>
+                        <li><a href="Atletismo.html">Atletismo</a>
+                        </li>
+                        <li><a href="KarateJutsu.html">Karaté Jutsu</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="Eventos.html">EVENTOS</a>
+                </li>
+                <li>
+                    <a href="Contactos.html">SUPORTE</a>
+                    <ul>
+                        <li><a href="Contactos.html">Contactos</a>
+                        </li>
+                        <li><a href="Morada.html">Morada</a>
+                        </li>
+                        <li><a href="Pedido de informações.html">Pedido de informações</a>
+                        </li>
+                        <li><a href="Proposta de Sócio.html">Proposta de Sócio</a>
+                        </li>
+                        <li><a href="Serviços de Sócio.html">Serviços de Sócio</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="Cliente.html">ÁREA DE CLIENTE</a>
+                    <ul>
+                        <li><a href="Login.html">Login</a>
+                        </li>
+                        <li><a href="Registo.html">Registo</a>
+                        </li>
+
+                    </ul>
+                </li>
+                <li>
+                    <a href="Vermais.html">VER MAIS &raquo;</a>
+                </li>
+            </ul>
+        </nav>
+        <div style="float:left; margin-right:0; ">
+            &nbsp;&nbsp;
+            <a href="Login.html"><img src="images/login.png" id="iconlogin" />
+            </a>
+            &nbsp;&nbsp;
+            <img src="images/user.png" id="iconlogin" />
+        </div>
+    </header>
+
+
+
+    <div id="container" class="clear">
+
+        <section id="slider" class="clear">
+            <figure>
+                <img class="homeSlides" src="images/img1.png">
+                <img class="homeSlides" src="images/img2.png">
+                <img class="homeSlides" src="images/img3.png">
+            </figure>
+            <script>
+                var myIndex = 0;
+                carousel();
+
+                function carousel() {
+                    var i;
+                    var x = document.getElementsByClassName("homeSlides");
+                    for (i = 0; i < x.length; i++) {
+                        x[i].style.display = "none";
+                    }
+                    myIndex++;
+                    if (myIndex > x.length) {
+                        myIndex = 1
+                    }
+                    x[myIndex - 1].style.display = "block";
+                    setTimeout(carousel, 4000); // Change image every 4 seconds
+                }
+            </script>
+        </section>
+
+        <div id="intro">
+            <section class="clear">
+
+                <article class="two_quarter">
+                    <h2>Breve história</h2>
+                    <p>Em agosto de 1962 um grupo de amigos juntou-se e fundou aquele que viria a ser uma referência no associativismo desportivo da região de Cascais, o Clube Desportivo do Arneiro (CDA). A partir dessa data, consideraram-se sócios fundadores do Clube as seguintes personalidades: João Rodrigues de Almeida; António Faria, Francisco Fungão; Francisco Parreira e Alcindo Moreira.</p>
+                </article>
+
+                <article class="two_quarter lastbox">
+                    <h2>Modalidades</h2>
+                    <p>TIRO - A equipa de tiro conta com cerca de 12 atiradores.</p>
+                    <p>ATLETISMO - A equipa de atletismo conta com mais de 25 atletas.</p>
+                    <p>KARATÉ JUTSU - Atualmente o karaté apresenta várias formas de prática em função do escalão etário a que se destina.</p>
+                </article>
+            </section>
+        </div>
+        <div id="homepage">
+            <section class="one_quarter">
+                <h2 class="title">Morada</h2>
+                <nav>
+                    <ul>
+                        <li>
+                            <p>Estrada P. do Arneiro, nº 360</p>
+                            <p>2775 - 524 Carcavelos</p>
+                            <p><a href="Morada.html">Ver no mapa &raquo;</a>
+                            </p>
+                        </li>
+                    </ul>
+                </nav>
+            </section>
+            <section class="one_quarter">
+                <h2 class="title">Contactos</h2>
+                <nav>
+                    <ul>
+                        <li>Telefone: 214 577 978</li>
+                        <li>E-mail: cdarneiro@netcabo.pt</li>
+                        <li>Fax: 214 561 104</li>
+            </section>
+            <section class="two_quarter lastbox">
+                <h2 class="title">Parceiros</h2>
+                <p>Câmara Municipal de Caicas: <a href="http://www.cm-cascais.pt" />www.cm-cascais.pt</a>
+                </p>
+                <p>União de Freguesia de Carcavelos e Paredes: <a href="http://uf-carcavelosparede.pt" />uf-carcavelosparede.pt</a>
+                </p>
+                <p>Junta de Freguesia de São Domingues e Rana: <a href="http://www.jf-sdrana.pt" />www.jf-sdrana.pt</a>
+                </p>
+                <p>Inatel: <a href="http://www.inatel.pt" />www.inatel.pt</a>
+                </p>
+                <p>Federação Portuguesa de Tiro: <a href="http://www.fptiro.net" />www.fptiro.net</a>
+                </p>
+            </section>
+        </div>
+
+        <br>
+        <br>
+        <div id="partners" class="clear">
+            <ul>
+                <li><img src="images/parceiros1.png">
+                </li>
+                <li><img src="images/parceiros2.png">
+                </li>
+                <li><img src="images/parceiros3.png">
+                </li>
+                <li><img src="images/parceiros4.png">
+                </li>
+                <li><img src="images/parceiros5.png">
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <footer id="footer" class="clear">
+        <p style="text-align: center;">Clube Desportivo do Arneiro, desde 1962</p>
+    </footer>
+</body>
+
+</html>

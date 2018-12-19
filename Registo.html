@@ -1,0 +1,190 @@
+﻿<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <title>Clube Desportivo do Arneiro</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles/layout.css" type="text/css">
+    <style>
+        #contact {
+            color: black;
+            font-size: 15px;
+        }
+        #contact .contact form input,
+        #contact .contact form textarea {
+            padding: 10px;
+            width: 445px;
+            font-size: 13px;
+            color: black;
+            letter-spacing: 1px;
+            background: white;
+            border: 2px solid firebrick;
+            -webkit-transition: all .1s ease-in-out;
+            -moz-transition: all .1s ease-in-out;
+            -ms-transition: all .1s ease-in-out;
+            -o-transition: all .1s ease-in-out;
+            transition: all .1s ease-in-out;
+        }
+        #contact .contact form textarea {
+            width: 445px;
+            height: 190px;
+        }
+        #contact .contact form .submit {
+            width: 100%;
+            padding: 10px;
+            font-size: 13px;
+            background: firebrick;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: white;
+            border: 2px solid firebrick;
+            -webkit-transition: all .1s ease-in-out;
+            -moz-transition: all .1s ease-in-out;
+            -ms-transition: all .1s ease-in-out;
+            -o-transition: all .1s ease-in-out;
+            transition: all .1s ease-in-out;
+        }
+        #contact .contact form .submit:hover {
+            color: white;
+            border: 2px solid darkred;
+            background: darkred;
+            cursor: pointer;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header id="header" style="float:left">
+        <img id="logo" src="images/logo.png" style="float:left">
+
+        <nav>
+            <ul>
+                <li><a href="index.html">INÍCIO</a>
+                </li>
+                <li>
+                    <a href="Clube.html">CLUBE</a>
+                    <ul>
+                        <li><a href="Historial.html">Historial</a>
+                        </li>
+                        <li><a href="Org.Sociais.html">Orgãos Sociais 2016 - 2017</a>
+                        </li>
+                        <li><a href="Estatutos.html">Estatutos</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="Modalidades.html">MODALIDADES</a>
+                    <ul>
+                        <li><a href="Tiro.html">Tiro</a>
+                        </li>
+                        <li><a href="Atletismo.html">Atletismo</a>
+                        </li>
+                        <li><a href="KarateJutsu.html">Karaté Jutsu</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="Eventos.html">EVENTOS</a>
+                </li>
+                <li>
+                    <a href="Contactos.html">SUPORTE</a>
+                    <ul>
+                        <li><a href="Contactos.html">Contactos</a>
+                        </li>
+                        <li><a href="Morada.html">Morada</a>
+                        </li>
+                        <li><a href="Pedido de informações.html">Pedido de informações</a>
+                        </li>
+                        <li><a href="Proposta de Sócio.html">Proposta de Sócio</a>
+                        </li>
+                        <li><a href="Serviços de Sócio.html">Serviços de Sócio</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="Cliente.html">ÁREA DE CLIENTE</a>
+                    <ul>
+                        <li><a href="Login.html">Login</a>
+                        </li>
+                        <li><a href="Registo.html">Registo</a>
+                        </li>
+
+                    </ul>
+                </li>
+                <li>
+                    <a href="Vermais.html">VER MAIS &raquo;</a>
+                </li>
+            </ul>
+        </nav>
+        <div style="float:left; margin-right:0; ">
+            &nbsp;&nbsp;
+            <a href="Login.html"><img src="images/login.png" id="iconlogin" />
+            </a>
+            &nbsp;&nbsp;
+            <img src="images/user.png" id="iconlogin" />
+        </div>
+    </header>
+
+
+    <div id="container" class="clear">
+        <h2 id="alltitles">Registo</h2>
+        <br>
+        <section id="contact">
+            <div class="contact">
+
+                <form method="post" enctype="multipart/form-data" onsubmit="return validateForm()" name="myForm">
+                    <div id="intro" style="margin-bottom:0px; padding-bottom:0px; border-bottom:0;}">
+                        <section class="clear">
+
+
+                            <article class="two_quarter">
+                                <p>Primeiro Nome*</p>
+                                <input type="text" placeholder="Seu nome" name="nome" required/>
+                                <br>
+                                <p>Apelido*</p>
+                                <input type="text" placeholder="Seu apelido" name="apelido" required/>
+                                <br>
+                                <p>Email*</p>
+                                <input type="email" placeholder="Seu email" name="email" required/>
+                            </article>
+                            <article class="two_quarter lastbox">
+                                <p>Password*</p>
+                                <input type="password" placeholder="Sua password" name="pass" required/>
+                                <br>
+                                <p>Telemóvel</p>
+                                <input type="tel" pattern="[0-9]{9}" placeholder="Seu telemóvel">
+                            </article>
+                        </section>
+                    </div>
+                    <input type="reset" class="submit" value="Apagar Tudo">
+                    <br>
+                    <br>
+                    <input type="submit" class="submit" value="Registar" name="submit">
+                </form>
+            </div>
+        </section>
+
+    </div>
+
+    <script>
+        function validateForm() {
+            var nome = document.forms["myForm"]["nome"].value;
+            var apelido = document.forms["myForm"]["apelido"].value;
+            var email = document.forms["myForm"]["email"].value;
+            var pass = document.forms["myForm"]["pass"].value;
+
+            if (nome == "nome" && apelido == "apelido" && email == "email@email.com" && pass == "pass") {
+                alert("Registo com sucesso! Entre agora na sua conta!");
+                window.location = "Login.html";
+                return false;
+            }
+        }
+    </script>
+
+    <footer id="footer" class="clear">
+        <p style="text-align: center;">Clube Desportivo do Arneiro, desde 1962</p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,269 @@
+﻿<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <title>Clube Desportivo do Arneiro</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles/layout.css" type="text/css">
+    <style>
+        .modalidadesAtletismo {
+            position: relative;
+            float: left;
+            width: 33.333333%;
+            height: 300px;
+        }
+        img.imgAtletismo {
+            display: block;
+            width: 100%;
+            height: 300px;
+        }
+        img.imageAtletismo {
+            width: 468px;
+            height: 265px;
+        }
+        .overlayAtletismo {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            opacity: 0;
+            transition: .5s ease;
+            background-color: firebrick;
+            color: white;
+            padding: 20px;
+            font-size: 12px;
+        }
+        .modalidadesAtletismo:hover .overlayAtletismo {
+            opacity: 0.85;
+        }
+        button.accordion {
+            background-color: firebrick;
+            color: white;
+            cursor: pointer;
+            padding: 18px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 15px;
+            transition: 0.4s;
+        }
+        button.accordion.active,
+        button.accordion:hover {
+            background-color: darkred;
+        }
+        button.accordion:after {
+            content: '\002B';
+            color: white;
+            font-weight: bold;
+            float: right;
+            margin-left: 5px;
+        }
+        button.accordion.active:after {
+            content: "\2212";
+        }
+        div.panel {
+            padding: 0;
+            background-color: white;
+            max-height: 0;
+            overflow: hidden;
+            transition: 0.6s ease-in-out;
+            opacity: 0;
+        }
+        div.panel.show {
+            opacity: 1;
+            max-height: 1000px;
+        }
+        .menuequipa {
+            background-color: white;
+            color: firebrick;
+            padding-right: 25px;
+            padding-top: 0px;
+            padding-bottom: 0px;
+            padding-left: 0px;
+            font-size: 18px;
+            cursor: pointer;
+            position: relative;
+            display: inline-block;
+            font-weight: bold;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header id="header" style="float:left">
+        <img id="logo" src="images/logo.png" style="float:left">
+
+        <nav>
+            <ul>
+                <li><a href="index.html">INÍCIO</a>
+                </li>
+                <li>
+                    <a href="Clube.html">CLUBE</a>
+                    <ul>
+                        <li><a href="Historial.html">Historial</a>
+                        </li>
+                        <li><a href="Org.Sociais.html">Orgãos Sociais 2016 - 2017</a>
+                        </li>
+                        <li><a href="Estatutos.html">Estatutos</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="Modalidades.html">MODALIDADES</a>
+                    <ul>
+                        <li><a href="Tiro.html">Tiro</a>
+                        </li>
+                        <li><a href="Atletismo.html">Atletismo</a>
+                        </li>
+                        <li><a href="KarateJutsu.html">Karaté Jutsu</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="Eventos.html">EVENTOS</a>
+                </li>
+                <li>
+                    <a href="Contactos.html">SUPORTE</a>
+                    <ul>
+                        <li><a href="Contactos.html">Contactos</a>
+                        </li>
+                        <li><a href="Morada.html">Morada</a>
+                        </li>
+                        <li><a href="Pedido de informações.html">Pedido de informações</a>
+                        </li>
+                        <li><a href="Proposta de Sócio.html">Proposta de Sócio</a>
+                        </li>
+                        <li><a href="Serviços de Sócio.html">Serviços de Sócio</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="Cliente.html">ÁREA DE CLIENTE</a>
+                    <ul>
+                        <li><a href="Login.html">Login</a>
+                        </li>
+                        <li><a href="Registo.html">Registo</a>
+                        </li>
+
+                    </ul>
+                </li>
+                <li>
+                    <a href="Vermais.html">VER MAIS &raquo;</a>
+                </li>
+            </ul>
+        </nav>
+        <div style="float:left; margin-right:0; ">
+            &nbsp;&nbsp;
+            <a href="Login.html"><img src="images/login.png" id="iconlogin" />
+            </a>
+            &nbsp;&nbsp;
+            <img src="images/user.png" id="iconlogin" />
+        </div>
+    </header>
+
+    <div id="container" class="clear">
+        <section class="clear">
+            <article class="two_quarter">
+                <h2 id="alltitles">Atletismo</h2>
+                <br>
+                <p>O atletismo é a modalidade desportiva organizada mais antiga do Mundo. </p>
+                <p>
+                    No Clube Desportivo do Aneiro praticam-se corrida, saltos e lançamentos. Os tipos mais comuns de competições feitas são: corrida de pista, corrida de estrada e corrida de corta-mato.
+                </p>
+                <p>
+                    A equipa de atletismo conta com mais de 25 atletas.
+                </p>
+
+            </article>
+            <article class="two_quarter lastbox">
+                <img src="images/atletismo.png" class="imageAtletismo">
+                </a>
+            </article>
+        </section>
+        </di>
+
+        <h2>Atletas</h2>
+        <br>
+        <br>
+        <br>
+        <div>
+        <div class="menuequipa"><a href="SenioresAtletismo.html">Séniores &raquo;<a></div>
+<div class="menuequipa"><a href="JunioresAtletismo.html">Juniores &raquo;<a></div>
+<div class="menuequipa"><a href="JuvenisAtletismo.html">Juvenis &raquo;<a></div>
+<div class="menuequipa"><a href="IniciadosAtletismo.html">Iniciados &raquo;<a></div>
+<div class="menuequipa"><a href="InfantisAtletismo.html">Infantis &raquo;<a></div>
+<div class="menuequipa"><a href="MinisAtletismo.html">Minis &raquo;<a></div>
+</div>
+
+<div class="clear">
+<br><br><br>
+<h2>Modalidades</h2>
+  <br><br>
+  <div class="modalidadesAtletismo">
+  <img src="images/corrida.png" class="imgAtletismo">
+  <div class="overlayAtletismo">
+    <h2 style="color:white; text-align: center">Corrida</h2>
+    <p>As corridas dividem-se em curta, média e longa distância.</p>
+    <p>Nas competições oficiais  as provas de curta de distancia são chamadas provas de velocidade e são de 100, 200 e 400 metros.
+    As de média distancia são as de 800 metros e 1 500 metros.
+    As de longa distância ou de fundo são as de 3 000 metros ou mais.
+    Podem ser divididas também de acordo com a existência ou não de obstáculos (barreiras) colocados no percurso.
+    Organizam-se ainda corridas de corta-mato e de montanha.
+  </div>
+  </div>
+  <div class="modalidadesAtletismo">
+  <img src="images/saltos.png" class="imgAtletismo">
+  <div class="overlayAtletismo">
+    <h2 style="color:white; text-align: center">Saltos</h2>
+    <p>As provas de salto podem ser divididas em provas de salto vertical e de salto horizontal.
+    <p>Dentre as provas de salto vertical há o salto em altura e o salto com vara.
+    As provas de salto horizontal envolvem o salto em distância chamado de salto em comprimento e triplo salto. </p>
+    <p>Todos os saltos são executados obedecendo a técnicas e regras específicas que dependem do tipo de salto a executar.</p>
+  </div>
+  </div>
+  <div class="modalidadesAtletismo">
+  <img src="images/lancamentos.png" class="imgAtletismo">
+  <div class="overlayAtletismo">
+    <h2 style="color:white; text-align: center">Lançamentos</h2>
+    <p>As provas de salto podem ser divididas em provas de salto vertical e de salto horizontal.
+    <p>Dentre as provas de salto vertical há o salto em altura e o salto com vara.
+    As provas de salto horizontal envolvem o salto em distância chamado de salto em comprimento e triplo salto. </p>
+    <p>Todos os saltos são executados obedecendo a técnicas e regras específicas que dependem do tipo de salto a executar.</p>
+  </div>
+  </div>
+</div>
+
+<div class="clear">
+<br><br>
+<button class="accordion">Galeria</button>
+<div class="panel">
+<img src="images/desportistas.png" style="width: 100%; height:100%;">
+</div>
+<br>
+</div>
+
+
+
+</div>
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+    acc[i].onclick = function(){
+        this.classList.toggle("active");
+        this.nextElementSibling.classList.toggle("show");
+  }
+}
+</script>
+
+<footer id="footer" class="clear">
+        <p style="text-align: center;">Clube Desportivo do Arneiro, desde 1962</p>
+    </footer>
+</body>
+
+</html>
